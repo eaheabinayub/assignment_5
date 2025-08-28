@@ -14,10 +14,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="font-[Hind_Madurai]">
     <!-- Navbar part -->
-
     <nav
       class="flex flex-col gap-2 lg:flex-row justify-between h-[100px] items-center my-[25px] mx-[60px]"
     >
@@ -181,36 +186,9 @@
         </div>
         <div class="bg-white w-[340px] p-8 shadow-md rounded-lg row-span-3">
           <div class="flex justify-between items-center">
-            <img
-              class="p-2 bg-[#FFE3E2] rounded-xl h-10"
-              src="./assets/ambulance.png"
-              alt=""
-            />
-            <i class="fa-regular fa-heart"></i>
-          </div>
-          <div class="my-3">
-            <h2 class="font-bold text-[20px]">Ambulance Service</h2>
-            <p class="text-[#5C5C5C]">Ambulance</p>
-          </div>
-          <div class="my-3">
-            <h2 class="font-bold text-[30px]">1994-999999</h2>
-            <div
-              class="bg-[#F2F2F2] rounded-[20px] h-10 w-10 flex justify-center items-center px-6 py-2"
-            >
-              <p class="text-[#5C5C5C]">Health</p>
-            </div>
-          </div>
-          <div class="flex gap-2">
-            <button
-              class="py-2 px-7 border-[1px] border-solid border-[#D4D6D5] w-[50%] rounded-lg hover:bg-black hover:text-white"
-            >
-              <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
-            </button>
-            <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
-            >
-              <i class="fa-solid fa-phone mr-2"></i>
-              Call
+            <p><i class="fa-regular fa-clock mr-2"></i>Call History</p>
+            <button class="text-white bg-[#00A63E] py-1.5 px-5 rounded-[50px]">
+              Clear
             </button>
           </div>
         </div>
