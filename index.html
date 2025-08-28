@@ -37,13 +37,13 @@
         <div
           class="flex gap-2 lg:gap-4 items-center bg-[#41ff6a21] px-4 lg:px-7 py-2 rounded-[50px]"
         >
-          <p class="font-bold">0</p>
+          <span class="font-bold" id="heartCount">0</span>
           <img class="h-[30px]" src="./assets/heart.png" alt="" />
         </div>
         <div
           class="flex items-center gap-2 lg:gap-4 bg-[#41ff6a21] px-4 lg:px-7 py-2 rounded-full rounded-[50px]"
         >
-          <p class="font-bold">100</p>
+          <span class="font-bold" id="coinCount">100</span>
           <img class="h-[25px]" src="./assets/coin.png" alt="" />
         </div>
         <div
@@ -86,7 +86,7 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">National Emergency Number</h2>
@@ -107,7 +107,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -121,7 +121,7 @@
               src="./assets/police.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Police Helpline Number</h2>
@@ -142,7 +142,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -156,7 +156,7 @@
               src="./assets/fire-service.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Fire Service Number</h2>
@@ -177,7 +177,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -199,7 +199,7 @@
               src="./assets/ambulance.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Ambulance Service</h2>
@@ -220,7 +220,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -234,7 +234,7 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Women & Child Helpline</h2>
@@ -255,7 +255,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -269,7 +269,7 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Anti-Corruption Helpline</h2>
@@ -290,7 +290,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -304,7 +304,7 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Electricity Helpline</h2>
@@ -325,7 +325,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -339,7 +339,7 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Brac Helpline</h2>
@@ -360,7 +360,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -374,7 +374,7 @@
               src="./assets/emergency.png"
               alt=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-btn"></i>
           </div>
           <div class="my-3">
             <h2 class="font-bold text-[20px]">Bangladesh Railway Helpline</h2>
@@ -395,7 +395,7 @@
               <i class="fa-regular fa-copy mr-2 rotate-90"></i>Copy
             </button>
             <button
-              class="bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
+              class="call-btn bg-[#00A63E] py-2 px-7 w-[50%] rounded-lg hover:bg-green-300"
             >
               <i class="fa-solid fa-phone mr-2"></i>
               Call
@@ -404,5 +404,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/function.js"></script>
   </body>
 </html>
