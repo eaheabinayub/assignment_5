@@ -42,3 +42,23 @@ for (btn of callButtons) {
     callHistory.insertBefore(div, callHistory.firstChild);
   });
 }
+// Clear button functionality
+const clear = document.getElementById("clearBtn");
+clear.addEventListener("click", function () {
+  callHistory.innerHTML = "";
+});
+// Copy buttons functionality
+let number = 0;
+const copyCount = document.getElementById("copyCount");
+const copyButtons = document.querySelectorAll(".copy-btn");
+for (btn of copyButtons) {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const card = e.currentTarget.closest(".bg-white");
+    const serviceNumber = card.querySelector(".service-number").innerText;
+    number++;
+    copyCount.innerHTML = number;
+    alert(`Number has been copied : ${serviceNumber}`);
+    navigator.clipboard.writeText(serviceNumber);
+  });
+}
