@@ -14,6 +14,7 @@ for (btn of heartButtons) {
 let coins = 100;
 const coinCount = document.getElementById("coinCount");
 const callButtons = document.querySelectorAll(".call-btn");
+const callHistory = document.getElementById("callHistory");
 for (btn of callButtons) {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -27,5 +28,17 @@ for (btn of callButtons) {
     alert(`Calling ${serviceName} - ${serviceNumber}`);
     coins -= 20;
     coinCount.innerText = coins;
+    const date = new Date().toLocaleTimeString();
+    const div = document.createElement("div");
+    div.innerHTML = `<div
+            class="flex justify-between items-center mt-5 p-3 rounded-lg bg-[#FAFAFA]"
+          >
+            <div>
+              <h3>${serviceName}</h3>
+              <h3>${serviceNumber}</h3>
+            </div>
+            <p>${date}</p>
+          </div>`;
+    callHistory.insertBefore(div, callHistory.firstChild);
   });
 }
